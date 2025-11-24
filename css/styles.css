@@ -157,7 +157,7 @@ button {
 
   .nav-link {
     display: block;
-
+    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -172,9 +172,9 @@ button {
   }
 
   .nav-link.current::after {
+    position: absolute;
     content: "";
 
-    position: absolute;
     left: 0;
     bottom: -1px;
 
@@ -1357,6 +1357,7 @@ button {
   }
 
   .footer-subscribe {
+    margin-top: 0;
     margin-left: 80px;
   }
   .footer-subscribe-text {
