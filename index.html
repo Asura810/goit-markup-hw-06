@@ -62,7 +62,7 @@
           </svg>
         </button>
 
-        <div class="mobile-menu is-open" data-menu>
+        <div class="mobile-menu" data-menu>
           <div class="container mobile-menu-container">
             <button class="mobile-menu-close" data-menu-close>
               <svg class="icon-close-header" width="8" height="8">
@@ -88,12 +88,16 @@
             <address class="contacts-mobile">
               <ul class="contacts-list-mobile">
                 <li class="contacts-item-mobile">
-                  <a class="contacts-link-mobile" href="tel:+110001111111"
+                  <a
+                    class="contacts-link-mobile current"
+                    href="tel:+110001111111"
                     >+11 (000) 111-11-11</a
                   >
                 </li>
                 <li class="contacts-item-mobile">
-                  <a class="contacts-link" href="mailto:info@devstudio.com"
+                  <a
+                    class="contacts-link-mobile"
+                    href="mailto:info@devstudio.com"
                     >info@devstudio.com</a
                   >
                 </li>
@@ -213,12 +217,21 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="team-card-photo"
-                src="./images/mark-guerrero.jpg"
-                alt="Mark Guerrero Product Designer"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mark-guerrero.jpg    1x,
+                    ./images/mark-guerrero@2x.jpg 2x
+                  "
+                />
+
+                <img
+                  class="team-card-photo"
+                  src="./images/mark-guerrero.jpg"
+                  alt="Mark Guerrero Product Designer"
+                  width="264"
+                />
+              </picture>
 
               <div class="team-info">
                 <h3 class="team-card-name">Mark Guerrero</h3>
@@ -258,12 +271,17 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-card-photo"
-                src="./images/tom-ford.jpg"
-                alt="Tom Ford Frontend Developer"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
+                />
+                <img
+                  class="team-card-photo"
+                  src="./images/tom-ford.jpg"
+                  alt="Tom Ford Frontend Developer"
+                  width="264"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-card-name">Tom Ford</h3>
                 <p class="team-card-role">Frontend Developer</p>
@@ -302,12 +320,20 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-card-photo"
-                src="./images/camila-garcia.jpg"
-                alt="Camila Garcia Marketing"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/camila-garcia.jpg    1x,
+                    ./images/camila-garcia@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-card-photo"
+                  src="./images/camila-garcia.jpg"
+                  alt="Camila Garcia Marketing"
+                  width="264"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-card-name">Camila Garcia</h3>
                 <p class="team-card-role">Marketing</p>
@@ -346,12 +372,20 @@
             </li>
 
             <li class="team-item">
-              <img
-                class="team-card-photo"
-                src="./images/daniel-wilson.jpg"
-                alt="Daniel Wilson UI Designer"
-                width="264"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/daniel-wilson.jpg    1x,
+                    ./images/daniel-wilson@2x.jpg 2x
+                  "
+                />
+                <img
+                  class="team-card-photo"
+                  src="./images/daniel-wilson.jpg"
+                  alt="Daniel Wilson UI Designer"
+                  width="264"
+                />
+              </picture>
               <div class="team-info">
                 <h3 class="team-card-name">Daniel Wilson</h3>
                 <p class="team-card-role">UI Designer</p>
